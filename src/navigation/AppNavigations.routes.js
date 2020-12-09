@@ -108,7 +108,9 @@ function Tabs() {
         activeTintColor: "#8743CC",
         inactiveTintColor: "#F3F4F5",
         style: {
-          marginBottom: 10,
+          height: 70,
+          paddingBottom: 10,
+          paddingTop: 10,
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "#0063a1",

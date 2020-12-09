@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function MainTabIcon({ focused, color, route }) {
   let iconName;
@@ -8,15 +8,15 @@ export default function MainTabIcon({ focused, color, route }) {
 
   switch (route) {
     case "ParkList":
-      iconName = `${focused ? "home" : "home-outline"}`;
+      iconName = `${focused ? "ios-home" : "ios-home"}`;
       iconSize = 25;
       break;
     case "Profile":
-      iconName = `${focused ? "account" : "account-outline"}`;
+      iconName = `${focused ? "ios-person" : "ios-person"}`;
       iconSize = 22;
       break;
     case "HistoryList":
-      iconName = `${focused ? "account" : "account"}`;
+      iconName = `${focused ? "ios-list" : "ios-list"}`;
       iconSize = 22;
       break;
     default:
@@ -25,7 +25,5 @@ export default function MainTabIcon({ focused, color, route }) {
       break;
   }
 
-  return (
-    <MaterialCommunityIcons name={iconName} color={color} size={iconSize} />
-  );
+  return <Ionicons name={iconName} color={color} size={iconSize} />;
 }
