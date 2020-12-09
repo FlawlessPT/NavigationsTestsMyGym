@@ -6,7 +6,14 @@ export default function Initial({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Initial{"\n"}</Text>
+      <Text
+        style={{
+          fontSize: 64,
+          fontFamily: "Aldrich_Regular",
+        }}
+      >
+        Initial{"\n"}
+      </Text>
       <Button
         title="Login"
         onPress={() => navigation.navigate("Login")}
